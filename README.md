@@ -1,6 +1,7 @@
 # Redhat Open Virtual Reality - Client
 
-ROVR(Redhat Open Virtual Reality) enables creating data generated, interactable, AR visualizations 🖲📊
+ROVR(Redhat Open Virtual Reality) enables creating data generated, interactable, AR visualizations 🖲📊  
+[![Build Status](https://travis-ci.org/shakedlokits/rosvr-client.svg?branch=master)](https://travis-ci.org/shakedlokits/rosvr-client)
 
 ## Getting Started
 
