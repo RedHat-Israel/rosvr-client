@@ -8,7 +8,7 @@ module.exports = {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist')
 	},
-	devtool: 'source-map',
+	devtool: '#inline-source-map',
 	devServer: {
 		contentBase: './dist'
 	},
@@ -19,6 +19,9 @@ module.exports = {
 			template: './src/index.ejs',
 		})
 	],
+	node: {
+		fs: 'empty'
+	},
 	module: {
 		rules: [
 			{
@@ -36,11 +39,12 @@ module.exports = {
 			},
 			{
 				test: /\.js$/,
-				exclude: /(node_modules|bower_components)/,
+				exclude: /(node_modules|bower_components|lib)/,
 				use: {
 					loader: 'babel-loader',
 					options: {
-						presets: ['env']
+						presets: ['env'],
+						plugins: ['transform-object-rest-spread']
 					}
 				}
 			}

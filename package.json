@@ -4,10 +4,11 @@
   "description": "RedHat Open Source Virtual Reality",
   "main": "index.js",
   "author": "Shaked Lokits",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.6.0",
     "clean-webpack-plugin": "^0.1.16",
     "eslint": "^4.3.0",
@@ -20,6 +21,7 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^2.0.4",
+    "phantomjs-prebuilt": "^2.1.14",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.6.1"
   },
@@ -28,7 +30,7 @@
     "build-production": "webpack -p",
     "watch": "webpack --progress --watch",
     "start-server": "webpack-dev-server --open",
-    "test": "JASMINE_CONFIG_PATH=./jasmine.json karma start"
+    "test": "karma start"
   },
   "dependencies": {
     "aframe": "^0.6.1",
