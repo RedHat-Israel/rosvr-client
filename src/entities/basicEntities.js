@@ -40,8 +40,8 @@ export function block() {
 
 	entity.setAttribute('position', {
 		x: 0,
-		y: -1,
-		z: -1.5
+		y: 0,
+		z: 0.5
 	})
 
 	entity.setAttribute('rotation', {
