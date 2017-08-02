@@ -16,5 +16,8 @@
 	{ "name": "Type: Bug", "color": "#e11d21" },
   { "name": "Type: Maintenance", "color": "#fbca04" },
   { "name": "Type: Enhancement", "color": "#84b6eb" },
-  { "name": "Type: Question", "color": "#cc317c" }
+  { "name": "Type: Question", "color": "#cc317c" },
+  { "name": "Difficulty: Beginner", "color": "#009800" },
+  { "name": "Difficulty: Intermediate", "color": "#207de5" },
+  { "name": "Difficulty: Hardcore", "color": "#f1482b" }
 ]
