@@ -26,9 +26,37 @@ export function scene() {
 }
 
 /**
- * generates a block entity with basic geometry and positioning parameters
- * @return {element} block element abstracted
+ * generates a entity with basic geometry and positioning parameters
+ * @return {element} element abstracted
+ * make sure the input is correct according to a-frame
  */
+
+export function createEntity(shape,height,width,px,py,pz,rx,ry,rz,color){
+	let entity = document.createElement('a-entity')
+	entity.setAttribute('geometry', {
+		primitive: shape,
+		height: height,
+		width: width
+	})
+
+	entity.setAttribute('position', {
+		x: px,
+		y: py,
+		z: pz
+	})
+
+	entity.setAttribute('rotation', {
+		x: rx,
+		y: ry,
+		z: rz
+	})
+	entity.setAttribute('color', {
+		color : color
+	})
+	return entity
+}
+
+
 export function block() {
 	// TODO extract block parameters to function call
 	let entity = document.createElement('a-entity')
@@ -47,6 +75,31 @@ export function block() {
 	entity.setAttribute('rotation', {
 		x: 0,
 		y: 25,
+		z: 0
+	})
+	entity.setAttribute('color', {
+		color : '#4CC3D9'
+	})
+	return entity
+}
+export function blockTwo() {
+	// TODO extract block parameters to function call
+	let entity = document.createElement('a-entity')
+	entity.setAttribute('geometry', {
+		primitive: 'box',
+		height: 2,
+		width: 2
+	})
+
+	entity.setAttribute('position', {
+		x: 0,
+		y: 2,
+		z: 1.23
+	})
+
+	entity.setAttribute('rotation', {
+		x: 0,
+		y: 50,
 		z: 0
 	})
 	return entity

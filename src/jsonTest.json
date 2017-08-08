@@ -1,0 +1,26 @@
+[{
+  "type": "file",
+  "threeDWidth":  1,
+  "threeDHigth": 1,
+  "owner":  "abraverm",
+  "threeDSize": "scale",
+  "threeDType": "box",
+  "threeDOwner": {
+    "abraverm": "color_blue",
+    "root": "color_red",
+    "default": "color_cached_or_new"
+  }
+},
+{
+  "type": "file",
+  "threeDWidth":  1,
+  "threeDHigth": 1,
+  "owner":  "abraverm",
+  "threeDSize": "scale",
+  "threeDType": "box",
+  "threeDOwner": {
+    "abraverm": "color_blue",
+    "root": "color_red",
+    "default": "color_cached_or_new"
+  }
+}]
