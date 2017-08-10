@@ -1,9 +1,8 @@
 [{
   "type": "file",
-  "threeDWidth":  1,
-  "threeDHigth": 1,
+  "fileSize": 1000000,
   "owner":  "abraverm",
-  "threeDSize": "scale",
+  "fileSize3D": "heatmap",
   "threeDType": "box",
   "threeDOwner": {
     "abraverm": "color_blue",
@@ -13,14 +12,25 @@
 },
 {
   "type": "file",
-  "threeDWidth":  1,
-  "threeDHigth": 1,
+  "fileSize": 1000000,
   "owner":  "abraverm",
-  "threeDSize": "scale",
+  "fileSize3D": "heatmap",
   "threeDType": "box",
   "threeDOwner": {
     "abraverm": "color_blue",
     "root": "color_red",
     "default": "color_cached_or_new"
   }
+  },
+  {
+    "type": "file",
+    "fileSize": 1000000,
+    "owner":  "abraverm",
+    "fileSize3D": "heatmap",
+    "threeDType": "box",
+    "threeDOwner": {
+      "abraverm": "color_blue",
+      "root": "color_red",
+      "default": "color_cached_or_new"
+    }
 }]
