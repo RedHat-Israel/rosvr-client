@@ -17,6 +17,10 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			title: 'OSVR Demo',
 			template: './src/index.ejs',
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/setup.ejs',
+			filename: 'setup.html'
 		})
 	],
 	node: {
